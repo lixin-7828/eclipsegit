@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>javacookie</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>NewCookie</display-name>
+    <servlet-name>NewCookie</servlet-name>
+    <servlet-class>com.oracel.cookies.NewCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewCookie</servlet-name>
+    <url-pattern>/NewCookie</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewCookiePath</display-name>
+    <servlet-name>NewCookiePath</servlet-name>
+    <servlet-class>com.oracel.cookies.NewCookiePath</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewCookiePath</servlet-name>
+    <url-pattern>/NewCookiePath</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>readCookie</display-name>
+    <servlet-name>readCookie</servlet-name>
+    <servlet-class>com.oracel.cookies.ReadCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>readCookie</servlet-name>
+    <url-pattern>/readCookie</url-pattern>
+  </servlet-mapping>
+</web-app>
